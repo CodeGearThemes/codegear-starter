@@ -1,0 +1,502 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .section--demo-page .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    margin: 0 0 0 -20px;
+    margin-bottom: 20px;
+    padding: 5px 24px;
+ }
+
+.section--demo-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-gap: 20px;
+    margin-top: 20px;
+ }
+
+ .section--demo-wrapper .grid-item .item-outer{
+    background: #FFFFFF;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+ }
+
+ .section--demo-wrapper .grid-item .screen-image{
+     position: relative;
+ }
+
+ .section--demo-wrapper .grid-item .item-outer img{
+     width: 100%;
+     position: relative;
+     vertical-align: bottom;
+ }
+
+ .section--demo-wrapper .grid-item .item-outer .preview{
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: opacity 0.5s;
+    background: rgba(0, 0, 0, 0.75);
+ }
+
+ .section--demo-wrapper .grid-item:hover .item-outer .preview{
+     opacity: 1;
+ }
+
+ .section--demo-wrapper .grid-item .item-outer .preview span{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    font-size: 0.8125rem;
+    color: #FFFFFF;
+    transition: background-color 0.5s;
+ }
+
+ .section--demo-wrapper .grid-item .template-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    border-top: 1px solid #ededed;
+ }
+
+ .section--demo-wrapper .grid-item .template-data .product-info{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+ }
+
+ .section--demo-wrapper .grid-item .product-info .name{
+     font-weight: bold;
+ }
+
+ .section--demo-wrapper .grid-item .badge{
+    width: 45px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+ }
+
+ .section--demo-wrapper .grid-item .badge-success{
+    background: #DEF3ED;
+    color: #3FB28F;
+ }
+
+ .section--demo-wrapper .grid-item .badge-info{
+    background: #007CBA;
+    color: #FFFFFF;
+ }
+
+ .section--demo-page .block--import-theme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+    position: fixed;
+    z-index: 10001;
+    opacity: 0;
+    top: 0; left: 0;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s opacity 0s, 0s visibility 0.5s;
+ }
+
+.js-import-theme-active .section--demo-page .block--import-theme{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s opacity 0s, 0s visibility 0s;
+}
+
+.section--demo-page .block--import-theme .block--import-popup {
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 2px;
+    overflow: hidden;
+    overflow-y: auto;
+    box-shadow: 0px 16px 32px -8px rgb(0 0 0 / 5%);
+}
+
+.section--demo-page .block--import-theme .block-import-step {
+    display: none;
+}
+
+.section--demo-page .block--import-theme .block-import-active {
+    display: flex;
+    flex-direction: column;
+}
+
+.section--demo-page .block--import-theme .import-header {
+    padding: 20px;
+    font-weight: 600;
+    color: #1E1E1E;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.section--demo-page .block-import-step .block-import-header {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 12px 24px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-output {
+    padding: 24px;
+}
+
+.section--demo-page .block--import-theme .block--import-output{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section--demo-page .block--import-theme .block-import-load{
+    padding: 30px 20px;
+}
+
+.section--demo-page .block--import-theme .block-import-load:after {
+    animation: spin 4s linear infinite;
+    font-family: 'dashicons';
+    font-size: 2rem;
+    content: "\f113";
+}
+
+.section--demo-page .block--import-theme .starter-import-actions{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+    padding: 20px;
+    width: calc(100% - 30px);
+}
+
+.section--demo-page .block--import-popup .starter-import-data{
+    width: 100%;
+}
+
+.section--demo-page .block--import-popup  .starter-import-plugins,
+.section--demo-page .block--import-popup  .starter-import-content{
+    padding: 30px 20px;
+}
+
+.section--demo-page .block--import-popup  .starter-import-content{
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.section--demo-page .block--import-popup  .starter-import-subheader {
+    font-size: 0.6875;
+    text-transform: uppercase;
+    color: #697B96;
+}
+
+.section--demo-page .block--import-popup .starter-switcher {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-switch {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 1.75rem;
+    height: 18px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 36px;
+    border-radius: 9px;
+}
+
+.section--demo-page .starter-checkbox:checked + .starter-switch .starter-switch-slider {
+    background: #FFFFFF;
+    top: 3px;
+    left: calc(50% + 4px);
+}
+
+.section--demo-page .block--import-popup .starter-switch .starter-switch-slider {
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background: #000000;
+    border-radius: 50%;
+    transition: left 0.25s ease;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-checkbox {
+    position: absolute;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    appearance: none;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-checkbox[readony] + .starter-switch, 
+.section--demo-page .block--import-popup  .starter-switcher .starter-checkbox:disabled + .starter-switch {
+    opacity: 0.5;
+}
+
+
+.section--demo-page .block--import-popup .starter-switcher .starter-switch{
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    height: 1.75rem;
+    height: 18px;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+    width: 36px;
+    border-radius: 9px;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-tooltip {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    min-width: 200px;
+    text-align: center;
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    background: #1E1E1E;
+    color: #FFF;
+    border-radius: 2px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-checkbox[readony]:hover ~ .starter-tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+.section--demo-page .block--import-popup .starter-switcher .starter-checkbox:checked + .starter-switch {
+    border-color: #007dba;
+    background: #007dba;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-desc {
+    color: #1E1E1E;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-progress {
+    margin-top: 2rem;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-progress-label:empty {
+    display: none;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-progress-bar {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: #F0F0F0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block-import-progress-label {
+    font-size: 0.75rem;
+    color: #697B96;
+    margin-bottom: 0.25rem;
+}
+
+.section--demo-page .block--import-theme .block-import-process .block--import-progress-indicator {
+    background: #007CBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--app-progress);
+}
+
+.section--demo-page .block--import-theme .block-import-process .block--import-progress-label {
+    margin-top: 0.5rem;
+    font-size: 0.625rem;
+    color: #007CBA;
+}
+
+.section--demo-page .block--import-theme .block--import-finish .block-import-info {
+    padding: 76px 24px 24px;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block-import-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block-import-logo svg {
+    display: block;
+    margin: 0 auto;
+    fill: #DEF3ED;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-title {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-info {
+    padding: 76px 24px 24px;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-logo{
+    text-align: center;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block-import-desc {
+    margin-top: 1rem;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block-import-customize {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block-import-customize .button {
+    padding: 6px 22px;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #f0f0f0;
+    padding: 24px;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-actions .text-link{
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.section--demo-page .block--import-theme  .block--import-finish .block--import-actions .button {
+    padding: 6px 22px;
+}
+
+.section--demo-page .block--import-theme .block--import-finish.block-import-active .checkmark--circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #7ac142;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.section--demo-page .block--import-theme .block--import-finish.block-import-active .checkmark {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill 0.4s ease-in-out 0.4s forwards, scale 0.3s ease-in-out 0.9s both;
+}
+
+.section--demo-page .block--import-theme .block--import-finish.block-import-active .checkmark--check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+.section--demo-page .block--import-theme .message-output{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: red;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    height: 40px;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.section--demo-page .block--import-theme .message-output:empty{
+    display: none !important;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes scale {
+    0%,
+    100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #7ac142;
+    }
+}

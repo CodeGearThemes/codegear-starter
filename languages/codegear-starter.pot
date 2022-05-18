@@ -1,0 +1,252 @@
+# Copyright (C) 2022 CodeGearThemes
+# This file is distributed under the same license as the codegear-starter package.
+msgid ""
+msgstr ""
+"Language: \n"
+"Project-Id-Version: Starter Sites for Elementor\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Report-Msgid-Bugs-To: https://codegearthemes.com/pages/contact/\n"
+"Last-Translator: aThemes <support@codegearthemes.com>\n"
+"Language-Team: aThemes <support@codegearthemes.com>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2022-05-16 04:38+0000\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: admin/class-codegear-starter-admin.php:343
+msgid "Cancel"
+msgstr ""
+
+#. Name of the plugin
+msgid "Codegear Starter"
+msgstr ""
+
+#. Author of the plugin
+msgid "CodeGearThemes"
+msgstr ""
+
+#. Description of the plugin
+msgid "CodeGearThemes starter sites."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:280
+msgid "Content"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:542
+msgid "Customize"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:306
+msgid "Customizer"
+msgstr ""
+
+#: includes/class-customizer-importer.php:45
+msgid ""
+"Error: The customizer import file is not in a correct format. Please make "
+"sure to use the correct customizer import file."
+msgstr ""
+
+#: includes/class-customizer-importer.php:51
+msgid ""
+"Error: The customizer import file is not suitable for current theme. You can "
+"only import customizer settings for the same theme or a child theme."
+msgstr ""
+
+#: includes/class-widget-importer.php:39
+msgid ""
+"Error: Widget import data could not be read. Please try a different file."
+msgstr ""
+
+#: includes/class-import.php:249
+msgid "Failed to initialize or activate importer plugin."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:330
+msgid "Finish"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:333
+msgid "Finishing setup..."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:471
+msgid "Get Pro"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:537
+msgid "Go ahead, customize the text, images and design to make it yours!"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://codegearthemes.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://codegearthemes.com/product/codegear-starter"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:349
+#: admin/class-codegear-starter-admin.php:463
+msgid "Import"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:274
+msgid "Import Content"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:493
+msgid "Import Theme"
+msgstr ""
+
+#: includes/class-widget-importer.php:197
+msgid "Imported"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:533
+msgid "Imported Successfully"
+msgstr ""
+
+#: includes/class-widget-importer.php:200
+msgid "Imported to Inactive"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:283
+msgid "Importing contents..."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:310
+msgid "Importing customizer options..."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:322
+msgid "Importing options..."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:297
+msgid "Importing widgets..."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:232
+msgid "Install Plugins"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:501
+msgid "Installing"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:264
+msgid "Installing and activating"
+msgstr ""
+
+#: includes/class-import.php:225
+msgid "Insufficient permissions to install the plugin."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:217
+#: admin/class-codegear-starter-admin.php:356
+msgid "Invalid demo content."
+msgstr ""
+
+#: includes/class-import.php:478
+msgid "No customizer JSON file specified."
+msgstr ""
+
+#: includes/class-import.php:621
+msgid "No options JSON file specified."
+msgstr ""
+
+#: includes/class-widget-importer.php:253
+msgid "No results for widget import!"
+msgstr ""
+
+#: includes/class-widget-importer.php:206
+msgid "No Title"
+msgstr ""
+
+#: includes/class-import.php:545
+msgid "No widgets WIE file specified."
+msgstr ""
+
+#: includes/class-import.php:279
+msgid "No XML file specified."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:319
+msgid "Options"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:506
+msgid ""
+"Please be patient and don't refresh this page, the import process may take a "
+"while, this also depends on your server."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:437
+msgid "Preview Demo"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:259
+msgid "Required plugin will be installed"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:549
+msgid "Return to Dashboard"
+msgstr ""
+
+#: includes/class-widget-importer.php:78
+msgid "Sidebar does not exist in theme (moving widget to Inactive)"
+msgstr ""
+
+#: includes/class-widget-importer.php:99
+msgid "Site does not support widget"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:201
+msgid "Something went wrong, contact support."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:107
+#: admin/class-codegear-starter-admin.php:394
+msgid "Starter Sites"
+msgstr ""
+
+#: includes/class-import.php:267 includes/class-import.php:466
+#: includes/class-import.php:533 includes/class-import.php:609
+msgid "The url address of the demo content is not specified."
+msgstr ""
+
+#: includes/class-import.php:217
+msgid "Unknown path in a plugin."
+msgstr ""
+
+#: includes/class-import.php:212
+msgid "Unknown slug in a plugin."
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:553
+msgid "View Site"
+msgstr ""
+
+#: includes/class-widget-importer.php:132
+msgid "Widget already exists"
+msgstr ""
+
+#: admin/class-codegear-starter-admin.php:293
+msgid "Widgets"
+msgstr ""
+
+#: includes/class-import.php:274
+msgid "You are not permitted to import contents."
+msgstr ""
+
+#: includes/class-import.php:473
+msgid "You are not permitted to import customizer."
+msgstr ""
+
+#: includes/class-import.php:616
+msgid "You are not permitted to import options."
+msgstr ""
+
+#: includes/class-import.php:540
+msgid "You are not permitted to import widgets."
+msgstr ""
